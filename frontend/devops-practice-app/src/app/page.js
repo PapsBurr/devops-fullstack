@@ -39,7 +39,6 @@ export default function Home() {
             <h1 className="text-center m-6">Software Engineer</h1>
             <hr></hr>
             <h1>About Me</h1>
-            <p>TEST</p>
             <p>
               Hi! My name is Nathan Pons and this is a website I made as a
               summary of my qualifications and projects I've made throughout the
