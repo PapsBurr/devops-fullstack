@@ -2,16 +2,16 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18
+    commands: 
+      - cd frontend/devops-practice-app
+      - aws codeartifact login --tool npm --repository resume-devops-repo --domain resume --domain-owner 242201278004 --region us-east-2
+      - npm install
       
   pre_build:
     commands:
       - echo "Installing dependecies... "
-      - cd frontend/devops-practice-app
-      - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact login --tool npm --repository resume-devops-repo --domain resume --domain-owner 242201278004 --region us-east-2`
-      - npm install
-
+      - npm test
+    
   build:
     commands:
       - echo Build started on `date`
