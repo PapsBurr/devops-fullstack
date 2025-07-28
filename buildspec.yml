@@ -7,7 +7,7 @@ phases:
     commands: 
       - cd frontend/devops-practice-app
       - aws codeartifact login --tool npm --repository resume-devops-repo --domain resume --domain-owner 242201278004 --region us-east-2
-      - npm install
+      - NODE_OPTIONS=--max_old_space_size=1000 npm install
       
   pre_build:
     commands:
@@ -16,7 +16,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - npm run build
+      - NODE_OPTIONS="--max-old-space-size=512" npm run build
   post_build:
     commands:
       - echo Build completed on `date`
