@@ -2,6 +2,8 @@ version: 0.2
 
 phases:
   install:
+    rundtime-versions:
+      nodejs: 18
     commands: 
       - cd frontend/devops-practice-app
       - aws codeartifact login --tool npm --repository resume-devops-repo --domain resume --domain-owner 242201278004 --region us-east-2
