@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/nextjs-app
+    destination: /var/www/resume-devops-frontend
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
