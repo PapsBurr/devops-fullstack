@@ -24,5 +24,7 @@ phases:
 artifacts:
   files:
     - '**/*'
+    - ../../../appspec.yml
+    - ../../../scripts/**/*
   base-directory: frontend/devops-practice-app/build
   discard-paths: no
