@@ -1,0 +1,4 @@
+        #!/bin/bash
+        cd /var/www/nextjs-app
+        npm install --production 
+        npm run build 
