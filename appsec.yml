@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/nextwork-web-project.war
-    destination: /usr/share/tomcat/webapps/
+  - source: /
+    destination: /var/www/nextjs-app
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
