@@ -1,4 +1,3 @@
-        #!/bin/bash
-        cd /var/www/nextjs-app
-        npm install --production 
-        npm run build 
+#!/bin/bash
+cd /var/www/nextjs-app
+npm run build 
