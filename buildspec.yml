@@ -21,10 +21,14 @@ phases:
     commands:
       - echo Build completed on `date`
 
+cache:
+  paths:
+    - 'frontend/devops-practice-app/node_modules/**/*'
+
 artifacts:
   files:
     - '**/*'
     - ../../../appspec.yml
     - ../../../scripts/**/*
-  base-directory: frontend/devops-practice-app/build
+  base-directory: frontend/devops-practice-app
   discard-paths: no
